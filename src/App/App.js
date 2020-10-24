@@ -4,13 +4,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 //* ---- COMPOSANT
 import ProfilCard from './ProfilCard';
+import TechnologyCard from './Technologie';
 
 //* ----- STYLE
 const useStyles = makeStyles((theme) => ({
   app: {
     backgroundColor: '#F2F2F2',
     minHeight: '100vh',
-    padding: '0.5em'
+    padding: '0.5em',
+    fontFamily: 'Montserrat',
+    fontStyle: 'normal'
   //   display: 'flex',
   //   [theme.breakpoints.down('xs')]: {
   //     width: '250px',
@@ -24,6 +27,7 @@ function App() {
   return (
     <div className={classes.app}>
      <ProfilCard />
+     <TechnologyCard />
     </div>
   );
 }
