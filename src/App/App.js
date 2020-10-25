@@ -8,6 +8,7 @@ import TechnologyFrontCard from './Technologie/front';
 import TechnologyBackCard from './Technologie/back';
 import Experiences from './Experiences';
 import Projects from './Projects';
+import Hobbies from './Hobbies';
 
 //* ----- STYLE
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +35,7 @@ function App() {
         <TechnologyBackCard />
         <Experiences />
         <Projects />
+        <Hobbies />
     </div>
   );
 }
