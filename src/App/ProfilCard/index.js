@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '0.5em'
     },
     pictureProfil: {
-        height: '20em',
+        width: '90.7vw',
+        height: 'auto',
         borderRadius: '12px',
     },
     profilDescription: {
