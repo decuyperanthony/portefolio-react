@@ -27,6 +27,8 @@ const projectsData = [
             },
         ],
         picture: tribz,
+        websiteLink: 'https://app.tribz.fr/',
+        repoLink: '#',
         title: 'Tribz',
         description: 'lorem ipsum fneled oner preken apeche andes allez on y va pourquoi faire si tu veux y retourner nous pouvons mais demain'
     },
@@ -47,6 +49,8 @@ const projectsData = [
             },
         ],
         picture: solidarity,
+        websiteLink: 'https://solidarity.website/',
+        repoLink: 'https://github.com/O-clock-Bifrost/project-solidarite',
         title: 'Solidarity',
         description: 'lorem ipsum fneled oner preken apeche andes allez on y va pourquoi faire si tu veux y retourner nous pouvons mais demain'
     },
@@ -63,6 +67,8 @@ const projectsData = [
             },
         ],
         picture: boutiqueDesAnges,
+        websiteLink: 'https://www.boutiquedesanges.fr/',
+        repoLink: 'https://github.com/O-clock-Bifrost/project-solidarite',
         title: 'Boutique des Anges',
         description: 'lorem ipsum fneled oner preken apeche andes allez on y va pourquoi faire si tu veux y retourner nous pouvons mais demain'
     },
