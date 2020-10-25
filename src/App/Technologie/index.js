@@ -12,6 +12,11 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('sm')]: {
         display: 'flex'
       },
+      [theme.breakpoints.up('lg')]: {
+        // flexDirection: 'column'
+        // maxHeight: '300px',
+        width: '100%'
+      },
     // backgroundColor: '#FFFFFF',
     // padding: '0.8em',
     // marginBottom: '0.5em'
