@@ -30,7 +30,7 @@ const techonologies = [
 ]
 
 const useStyles = makeStyles((theme) => ({
-    containerProfilCard: {
+    containerCard: {
     //   display: 'flex',
     //   [theme.breakpoints.down('xs')]: {
     //     width: '250px',
@@ -66,7 +66,7 @@ const TechnologyCard = () => {
     const classes = useStyles();
     const technologyJSX = techonologies.map((t) => {
         return (
-            <div className={classes.containerTechno}>
+            <div key={t.id + 55} className={classes.containerTechno}>
                 <div>
                      {t.name}
                 </div>
@@ -80,7 +80,7 @@ const TechnologyCard = () => {
         )
     });
     return (
-        <Card className={classes.containerProfilCard}>
+        <Card className={classes.containerCard}>
            <h3>Front end</h3>
            <div>
                {technologyJSX}
