@@ -9,10 +9,9 @@ import { Card } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     containerCard: {
-    //   display: 'flex',
-    //   [theme.breakpoints.down('xs')]: {
-    //     width: '250px',
-    //   },
+    [theme.breakpoints.up('lg')]: {
+        marginLeft: '0.5em'
+    },
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
     marginBottom: '0.5em',
