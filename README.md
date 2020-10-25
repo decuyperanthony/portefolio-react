@@ -8,12 +8,12 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://mystifying-turing-07beda.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
+    <a href="https://github.com/decuyperanthony/portefolio-react">
+      my Solution
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">
