@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '0.5em'
     },
     pictureProfil: {
-        width: '90.7vw',
+        width: '89vw',
         height: 'auto',
         borderRadius: '12px',
     },
@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
             fontWeight: '600',
             fontSize: '18px',
             lineHeight: '30px',
-            // marginTop: '0'
             marginTop: '0.4em',
             marginBottom: '0'
         },
