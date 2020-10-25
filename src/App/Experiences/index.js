@@ -34,7 +34,7 @@ const experiencesData = [
 ];
 
 const useStyles = makeStyles((theme) => ({
-    containerProfilCard: {
+    containerCard: {
     //   display: 'flex',
     //   [theme.breakpoints.down('xs')]: {
     //     width: '250px',
@@ -66,7 +66,7 @@ const ExperiencesCard = () => {
     const classes = useStyles();
     const experiencesJSX = experiencesData.map((exp) => {
         return (
-            <div className={classes.containerExperience}>
+            <div key={exp.id + 33} className={classes.containerExperience}>
                 <div>
                     <img
                     src={exp.logo}
@@ -83,7 +83,7 @@ const ExperiencesCard = () => {
         )
     })
     return (
-        <Card className={classes.containerProfilCard}>
+        <Card className={classes.containerCard}>
             <div className={classes.experienceTitle}>Experiences</div>
             <div>
                 {experiencesJSX}
