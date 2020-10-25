@@ -64,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
         width: '48%',
         marginLeft: '0.25em'
     },
+    [theme.breakpoints.up('lg')]: {
+        marginLeft: '0.5em'
+    },
     },
     containerTechno: {
         display: 'flex',
