@@ -4,8 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 //* ---- COMPOSANT
 import ProfilCard from './ProfilCard';
-import TechnologyFrontCard from './Technologie/front';
-import TechnologyBackCard from './Technologie/back';
+import Technology from './Technologie';
 import Experiences from './Experiences';
 import Projects from './Projects';
 import Hobbies from './Hobbies';
@@ -17,11 +16,11 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
     padding: '0.5em',
     fontFamily: 'Montserrat',
-    fontStyle: 'normal'
+    fontStyle: 'normal',
   //   display: 'flex',
-  //   [theme.breakpoints.down('xs')]: {
-  //     width: '250px',
-  //   },
+    [theme.breakpoints.up('sm')]: {
+      // width: '250px',
+    },
   },
 
 }));
@@ -31,8 +30,7 @@ function App() {
   return (
     <div className={classes.app}>
         <ProfilCard />
-        <TechnologyFrontCard />
-        <TechnologyBackCard />
+        <Technology />
         <Experiences />
         <Projects />
         <Hobbies />
