@@ -49,7 +49,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '12px',
         margin: 0,
         marginBottom: '0.5em'
-    }
+    },
+    [theme.breakpoints.up('sm')]: {
+        width: '48%',
+        marginRight: '0.25em'
+    },
     },
     containerTechno: {
         display: 'flex',
