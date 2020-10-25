@@ -7,7 +7,8 @@ import ProfilCard from './ProfilCard';
 import Technology from './Technologie';
 import Experiences from './Experiences';
 import Projects from './Projects';
-import Hobbies from './Hobbies';
+import HobbiesMobile from './HobbiesMobile';
+import HobbiesDesktop from './HobbiesDesktop';
 
 //* ----- STYLE
 const useStyles = makeStyles((theme) => ({
@@ -17,23 +18,36 @@ const useStyles = makeStyles((theme) => ({
     padding: '0.5em',
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
-  //   display: 'flex',
     [theme.breakpoints.up('sm')]: {
       // width: '250px',
     },
+    [theme.breakpoints.up('lg')]: {
+      padding: '2em',
+    },
   },
-
+  profilAndTechnologyComponents: {
+    [theme.breakpoints.up('lg')]: {
+      display: 'flex',
+    },
+  },
 }));
 
 function App() {
   const classes = useStyles();
   return (
     <div className={classes.app}>
-        <ProfilCard />
-        <Technology />
-        <Experiences />
-        <Projects />
-        <Hobbies />
+        <div className={classes.profilAndTechnologyComponents}>
+          <div>
+          <ProfilCard />
+          <HobbiesDesktop />
+          </div>
+          <div className={classes.experiencesAndTechnologyComponents}>
+            <Technology />
+            <Experiences />
+            <Projects />
+          </div>
+        </div>
+        <HobbiesMobile />
     </div>
   );
 }
