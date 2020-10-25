@@ -10,12 +10,17 @@ import { Card } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     containerProfilCard: {
     //   display: 'flex',
-    //   [theme.breakpoints.down('xs')]: {
-    //     width: '250px',
-    //   },
+      [theme.breakpoints.up('sm')]: {
+            display: 'flex'
+      },
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
     marginBottom: '0.5em'
+    },
+    pictureWebsiteContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        marginBottom: '0.8em'
     },
     pictureWebsite: {
         // height: '12.8em',
@@ -23,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
         width: '89vw',
         height: 'auto',
         borderRadius: '12px',
+        maxWidth: '400px'
     },
     hashtagsContainer: {
         fontWeight: '500',
@@ -72,7 +78,7 @@ const Project = ( {projectData} ) => {
     })
     return (
         <Card className={classes.containerProfilCard}>
-              <div style={{marginBottom: '0.8em'}}>
+              <div className={classes.pictureWebsiteContainer}>
                 <img className={classes.pictureWebsite} alt={projectData.picture} src={projectData.picture} />
               </div>
               <div className={classes.hashtagsContainer}>{hashtagsJSX}</div>
