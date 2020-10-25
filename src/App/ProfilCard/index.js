@@ -10,7 +10,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 
 const useStyles = makeStyles((theme) => ({
-    containerProfilCard: {
+    containerCard: {
     //   display: 'flex',
     //   [theme.breakpoints.down('xs')]: {
     //     width: '250px',
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 const ProfilCard = () => {
     const classes = useStyles();
     return (
-        <Card className={classes.containerProfilCard}>
+        <Card className={classes.containerCard}>
             <div>
                 <img className={classes.pictureProfil} alt="img-anthony" src={anthony} />
             </div>
