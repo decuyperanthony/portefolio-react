@@ -33,13 +33,13 @@ const hobbiesData = [
 
 const useStyles = makeStyles((theme) => ({
     containerCard: {
-    //   display: 'flex',
-    //   [theme.breakpoints.down('xs')]: {
-    //     width: '250px',
-    //   },
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
-    marginBottom: '0.5em'
+    marginBottom: '0.5em',
+    maxWidth: '413px',
+    [theme.breakpoints.down('md')]: {
+        display: 'none',
+      },
     },
     mainTitle: {
         fontWeight: '500',
@@ -47,12 +47,17 @@ const useStyles = makeStyles((theme) => ({
         color: '',
         // marginBottom: '0.5em'
     },
+    pictureHobbiesContainer: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
     pictureHobbies: {
         // height: '12.8em',
         // height: '100%',
         width: '89vw',
         height: 'auto',
         borderRadius: '12px',
+        maxWidth: '400px'
     },
     title: {
         fontWeight: '600',
@@ -73,7 +78,7 @@ const TechnologyCard = () => {
     const hobbiesJSX = hobbiesData.map((h) => {
         return (
             <div>
-                <div>
+                <div className={classes.pictureHobbiesContainer}>
                     <img
                     src={h.picture}
                     alt={`${h.title}`}

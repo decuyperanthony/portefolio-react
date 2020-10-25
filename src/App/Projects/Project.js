@@ -10,12 +10,26 @@ import { Card } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     containerProfilCard: {
     //   display: 'flex',
-    //   [theme.breakpoints.down('xs')]: {
-    //     width: '250px',
-    //   },
+    [theme.breakpoints.up('sm')]: {
+            display: 'flex'
+    },
+    [theme.breakpoints.up('lg')]: {
+        marginLeft: '0.5em'
+    },
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
     marginBottom: '0.5em'
+    },
+    pictureWebsiteContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        marginBottom: '0.8em',
+        [theme.breakpoints.up('sm')]: {
+            width: '40%',
+            justifyContent: 'flex-start',
+        },
+
+
     },
     pictureWebsite: {
         // height: '12.8em',
@@ -23,6 +37,16 @@ const useStyles = makeStyles((theme) => ({
         width: '89vw',
         height: 'auto',
         borderRadius: '12px',
+        maxWidth: '400px',
+        [theme.breakpoints.up('sm')]: {
+            width: '14.5em'
+        },
+    },
+    textContainer: {
+        [theme.breakpoints.up('sm')]: {
+            width: '60%',
+            marginLeft: '1em'
+        },
     },
     hashtagsContainer: {
         fontWeight: '500',
@@ -72,19 +96,21 @@ const Project = ( {projectData} ) => {
     })
     return (
         <Card className={classes.containerProfilCard}>
-              <div style={{marginBottom: '0.8em'}}>
+              <div className={classes.pictureWebsiteContainer}>
                 <img className={classes.pictureWebsite} alt={projectData.picture} src={projectData.picture} />
               </div>
-              <div className={classes.hashtagsContainer}>{hashtagsJSX}</div>
-              <div className={classes.title}>{projectData.title}</div>
-              <div className={classes.description}>{projectData.description}</div>
-              <div className={classes.containerButton}>
-                  <a href={projectData.websiteLink} style={{marginRight: '0.8em'}}>
-                      <div className={classes.button}>Demo</div>
-                  </a>
-                  <a href={projectData.repoLink}>
-                      <div className={classes.button}>Code</div>
-                  </a>
+              <div className={classes.textContainer}>
+                <div className={classes.hashtagsContainer}>{hashtagsJSX}</div>
+                <div className={classes.title}>{projectData.title}</div>
+                <div className={classes.description}>{projectData.description}</div>
+                <div className={classes.containerButton}>
+                    <a href={projectData.websiteLink} style={{marginRight: '0.8em'}}>
+                        <div className={classes.button}>Demo</div>
+                    </a>
+                    <a href={projectData.repoLink}>
+                        <div className={classes.button}>Code</div>
+                    </a>
+                </div>
               </div>
         </Card>
     );

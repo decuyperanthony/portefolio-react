@@ -59,7 +59,14 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '12px',
         margin: 0,
         marginBottom: '0.5em'
-    }
+    },
+    [theme.breakpoints.up('sm')]: {
+        width: '48%',
+        marginLeft: '0.25em'
+    },
+    [theme.breakpoints.up('lg')]: {
+        marginLeft: '0.5em'
+    },
     },
     containerTechno: {
         display: 'flex',

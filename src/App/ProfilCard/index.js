@@ -17,12 +17,20 @@ const useStyles = makeStyles((theme) => ({
     //   },
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
-    marginBottom: '0.5em'
+    marginBottom: '0.5em',
+    maxWidth: '413px',
+    },
+    pictureProfilContainer: {
+        display: 'flex',
+        justifyContent: 'center'
     },
     pictureProfil: {
-        width: '89vw',
+        width: '89.5vw',
         height: 'auto',
         borderRadius: '12px',
+        [theme.breakpoints.up('sm')]: {
+            // width: '250px',
+        },
     },
     profilDescription: {
         color: '#4F4F4F',
@@ -61,7 +69,7 @@ const ProfilCard = () => {
     const classes = useStyles();
     return (
         <Card className={classes.containerCard}>
-            <div>
+            <div className={classes.pictureProfilContainer}>
                 <img className={classes.pictureProfil} alt="img-anthony" src={anthony} />
             </div>
             <div className={classes.profilDescription}>

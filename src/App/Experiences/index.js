@@ -41,7 +41,10 @@ const useStyles = makeStyles((theme) => ({
     //   },
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
-    marginBottom: '0.5em'
+    marginBottom: '0.5em',
+    [theme.breakpoints.up('lg')]: {
+        marginLeft: '0.5em'
+    },
     },
     experienceTitle: {
         fontSize: '18px',
