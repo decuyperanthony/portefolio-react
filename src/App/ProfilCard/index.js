@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
     marginBottom: '0.5em',
-    maxWidth: '413px'
+    maxWidth: '413px',
     },
     pictureProfilContainer: {
         display: 'flex',
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '12px',
         [theme.breakpoints.up('sm')]: {
             // width: '250px',
-          },
+        },
     },
     profilDescription: {
         color: '#4F4F4F',
