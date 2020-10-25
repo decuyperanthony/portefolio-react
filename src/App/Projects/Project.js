@@ -18,20 +18,74 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '0.5em'
     },
     pictureWebsite: {
-        height: '12.8em',
+        // height: '12.8em',
+        // height: '100%',
+        width: '89vw',
+        height: 'auto',
         borderRadius: '12px',
     },
+    hashtagsContainer: {
+        fontWeight: '500',
+        fontSize: '12px',
+        color: '#4F4F4F',
+        marginBottom: '1.2em'
+    },
+    title: {
+        marginBottom: '0.8em',
+        fontWeight: '500',
+        fontSize: '18px',
+        color: '#333333',
+    },
+    description: {
+        marginBottom: '1.4em',
+        fontWeight: '500',
+        fontSize: '12px',
+        color: '#828282',
+    },
+    containerButton: {
+        display: 'flex',
+        '& a': {
+            textDecoration: 'none',
+            color: '#5C94E1'
+        }
+    },
+    button: {
+        border: '1px solid #5C94E1',
+        borderRadius: '12px',
+        padding: '0.5em 1.5em',
+        fontSize: '14px',
+        '&:hover': {
+            backgroundColor: '#5C94E1',
+            color: 'white'
+        }
+    }
 
 }));
 
 const Project = ( {projectData} ) => {
-    console.log('projectData', projectData)
+    console.log('projectData', projectData);
     const classes = useStyles();
+    const hashtagsJSX = projectData.hashtags.map((h) => {
+        return (
+            <span key={h.id + 66}>#{h.name} {' '}</span>
+        )
+    })
     return (
         <Card className={classes.containerProfilCard}>
-              <div>
+              <div style={{marginBottom: '0.8em'}}>
                 <img className={classes.pictureWebsite} alt={projectData.picture} src={projectData.picture} />
-            </div>
+              </div>
+              <div className={classes.hashtagsContainer}>{hashtagsJSX}</div>
+              <div className={classes.title}>{projectData.title}</div>
+              <div className={classes.description}>{projectData.description}</div>
+              <div className={classes.containerButton}>
+                  <a href={projectData.websiteLink} style={{marginRight: '0.8em'}}>
+                      <div className={classes.button}>Demo</div>
+                  </a>
+                  <a href={projectData.repoLink}>
+                      <div className={classes.button}>Code</div>
+                  </a>
+              </div>
         </Card>
     );
 };
