@@ -4,7 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 //* ---- COMPOSANT
 import ProfilCard from './ProfilCard';
-import TechnologyCard from './Technologie';
+import TechnologyFrontCard from './Technologie/front';
+import TechnologyBackCard from './Technologie/back';
+import Experiences from './Experiences';
 
 //* ----- STYLE
 const useStyles = makeStyles((theme) => ({
@@ -26,8 +28,10 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.app}>
-     <ProfilCard />
-     <TechnologyCard />
+        <ProfilCard />
+        <TechnologyFrontCard />
+        <TechnologyBackCard />
+        <Experiences />
     </div>
   );
 }
