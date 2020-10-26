@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '413px',
     [theme.breakpoints.up('lg')]: {
         display: 'none',
-      },
+    },
     },
     mainTitle: {
         fontWeight: '500',

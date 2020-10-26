@@ -37,9 +37,10 @@ const useStyles = makeStyles((theme) => ({
         width: '89vw',
         height: 'auto',
         borderRadius: '12px',
-        maxWidth: '400px',
+        maxWidth: '100%',
         [theme.breakpoints.up('sm')]: {
-            width: '14.5em'
+            width: '14.5em',
+            height: 'auto'
         },
     },
     textContainer: {
