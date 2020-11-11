@@ -34,13 +34,13 @@ const useStyles = makeStyles((theme) => ({
     pictureWebsite: {
         // height: '12.8em',
         // height: '100%',
-        width: '89vw',
-        height: 'auto',
+        // width: '89vw',
+        // height: 'auto',
         borderRadius: '12px',
         maxWidth: '100%',
         [theme.breakpoints.up('sm')]: {
             width: '14.5em',
-            height: 'auto'
+            // height: 'auto'
         },
     },
     textContainer: {

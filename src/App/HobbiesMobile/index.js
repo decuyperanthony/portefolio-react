@@ -56,12 +56,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center'
     },
     pictureHobbies: {
-        // height: '12.8em',
-        // height: '100%',
-        width: '89vw',
-        height: 'auto',
+        maxWidth: '100%',
         borderRadius: '12px',
-        maxWidth: '400px'
     },
     title: {
         fontWeight: '600',
