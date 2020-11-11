@@ -84,8 +84,7 @@ const ProfilCard = () => {
                      <a href="tel:+33607597862">06 07 59 78 62</a>
                 </div>
                 <p>
-                    Self-motivated developer, who is willing to learn
-                    and create outstanding UI applications.
+                Actuellement développeur chez Tanke. Développement en cours d une application en React avec deux API différentes en Node. Mongo && Postgres
                 </p>
             </div>
         </Card>
