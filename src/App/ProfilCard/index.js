@@ -42,7 +42,11 @@ const useStyles = makeStyles((theme) => ({
 
     },
     opquast: {
-        height: '5em'
+        height: '5em',
+        '&:hover': {
+            height: '6em',
+            transition: 'width 2s'
+        }
     },
     profilDescription: {
         color: '#4F4F4F',
@@ -63,8 +67,11 @@ const useStyles = makeStyles((theme) => ({
         },
         '& a':{
             textDecoration: 'none',
-            color: '#4F4F4F',
+            color: '#2F80ED',
             fontSize: '14px',
+            '&:hover': {
+                textDecoration: 'underline'
+            }
         },
         '& p':{
             color: '#828282',
@@ -91,7 +98,9 @@ const ProfilCard = () => {
                         <h2>Developpeur Node-React</h2>
                     </div>
                     <div>
-                        <img src={opquast} alt="upquast" className={classes.opquast}/>
+                        <a href="https://directory.opquast.com/fr/certificat/GC6XEH/">
+                            <img src={opquast} alt="upquast" className={classes.opquast}/>
+                        </a>
                     </div>
                 </div>
                 <div className={classes.information}>
