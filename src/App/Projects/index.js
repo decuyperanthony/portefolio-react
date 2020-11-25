@@ -24,15 +24,23 @@ const projectsData = [
             },
             {
                 id: 13,
-                name: 'mongo'
+                name: 'express'
             },
             {
                 id: 14,
-                name: 'facebookOAuthConnect'
+                name: 'postgres'
+            },
+            {
+                id: 14,
+                name: 'mongo'
             },
             {
                 id: 15,
-                name: 'youtubeOAuthConnect'
+                name: 'docker'
+            },
+            {
+                id: 15,
+                name: 'jenkins'
             },
         ],
         picture: tribz,
@@ -53,12 +61,28 @@ const projectsData = [
                 name: 'react'
             },
             {
+                id: 25,
+                name: 'node'
+            },
+            {
+                id: 25,
+                name: 'express'
+            },
+            {
                 id: 26,
                 name: 'postgres'
             },
             {
                 id: 26,
                 name: 'datamapper'
+            },
+            {
+                id: 26,
+                name: 'aws'
+            },
+            {
+                id: 26,
+                name: 'jenkins'
             },
         ],
         picture: solidarity,

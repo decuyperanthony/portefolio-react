@@ -19,7 +19,7 @@ const techonologies = [
     },
     {
         id: 3,
-        name: 'CSS',
+        name: 'SASS',
         value: 70
     },
     {

@@ -8,7 +8,9 @@ import { Card } from '@material-ui/core';
 
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import opquast from '../../img/opquast.png'
 const useStyles = makeStyles((theme) => ({
     containerCard: {
     //   display: 'flex',
@@ -31,6 +33,16 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             // width: '250px',
         },
+    },
+    containerNameOpquast: {
+        display: 'flex',
+        justifyContent: 'space-between'
+    },
+    name: {
+
+    },
+    opquast: {
+        height: '5em'
     },
     profilDescription: {
         color: '#4F4F4F',
@@ -73,8 +85,23 @@ const ProfilCard = () => {
                 <img className={classes.pictureProfil} alt="img-anthony" src={anthony} />
             </div>
             <div className={classes.profilDescription}>
-                <h1>Anthony de Cuyper</h1>
-                <h2>Front-end developper</h2>
+                <div className={classes.containerNameOpquast}>
+                    <div className={classes.name}>
+                        <h1>Anthony de Cuyper</h1>
+                        <h2>Developpeur Node-React</h2>
+                    </div>
+                    <div>
+                        <img src={opquast} alt="upquast" className={classes.opquast}/>
+                    </div>
+                </div>
+                <div className={classes.information}>
+                    <LinkedInIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
+                    <a href="https://www.linkedin.com/in/anthony-de-cuyper/">anthony-de-cuyper</a>
+                </div>
+                <div className={classes.information}>
+                    <GitHubIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
+                    <a href="https://github.com/decuyperanthony?tab=repositories">@decuyperanthony</a>
+                </div>
                 <div className={classes.information}>
                     <PhoneIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
                     <a href="mailto:decuyperanthony@gmail.com">decuyperanthony@gmail.com</a>
