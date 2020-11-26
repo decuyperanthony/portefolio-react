@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         // height: '12.8em',
         // height: '100%',
         // width: '89vw',
-        maxHeight: '9em',
+        maxHeight: '11em',
         borderRadius: '12px',
         maxWidth: '100%',
         [theme.breakpoints.up('sm')]: {
@@ -104,20 +104,26 @@ const Project = ( {projectData} ) => {
                 <div className={classes.title}>{projectData.title}</div>
                 <div className={classes.description}>{projectData.description}</div>
                 <div className={classes.containerButton}>
-                    <a
-                    href={projectData.websiteLink}
-                     style={{marginRight: '0.8em'}}
-                     target="_blank"
-                     rel="noreferrer"
-                     >
-                        <div className={classes.button}>Demo</div>
-                    </a>
-                    <a href={projectData.repoLink}
-                     target="_blank"
-                     rel="noreferrer"
-                     >
-                        <div className={classes.button}>Code</div>
-                    </a>
+                    {(projectData.websiteLink) ? (
+                         <a
+                         href={projectData.websiteLink}
+                          style={{marginRight: '0.8em'}}
+                          target="_blank"
+                          rel="noreferrer"
+                          >
+                             <div className={classes.button}>Demo</div>
+                         </a>
+                    ) : null}
+                    {(projectData.repoLink) ? (
+                         <a
+                         href={projectData.repoLink}
+                          style={{marginRight: '0.8em'}}
+                          target="_blank"
+                          rel="noreferrer"
+                          >
+                             <div className={classes.button}>Code</div>
+                         </a>
+                    ) : null}
                 </div>
               </div>
         </Card>

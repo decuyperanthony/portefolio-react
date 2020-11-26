@@ -4,33 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { Card } from '@material-ui/core';
 
-// == pictures
-import history from '../../img/history.jpg';
-import website from '../../img/websitePassion.jpg';
-import travel from '../../img/travel.jpg'
-
-const hobbiesData = [
-    {
-        id: 144,
-        title: 'Voyages',
-        description: '',
-        picture: travel
-    },
-    {
-        id: 142,
-        title: 'Technologies',
-        description: '',
-        picture: website
-    },
-    {
-        id: 143,
-        title: 'Histoire',
-        //! remplir description
-        description: '',
-        picture: history
-    },
-
-]
+import hobbiesData from '../../data/hobbiesData';
 
 const useStyles = makeStyles((theme) => ({
     containerCard: {

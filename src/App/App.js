@@ -13,6 +13,7 @@ import HobbiesDesktop from './HobbiesDesktop';
 //* ----- STYLE
 const useStyles = makeStyles((theme) => ({
   app: {
+    // margin: 'auto',
     backgroundColor: '#F2F2F2',
     minHeight: '100vh',
     padding: '0.5em',
