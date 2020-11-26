@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         // height: '12.8em',
         // height: '100%',
         // width: '89vw',
-        // height: 'auto',
+        maxHeight: '9em',
         borderRadius: '12px',
         maxWidth: '100%',
         [theme.breakpoints.up('sm')]: {
@@ -88,11 +88,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Project = ( {projectData} ) => {
-    console.log('projectData', projectData);
     const classes = useStyles();
     const hashtagsJSX = projectData.hashtags.map((h) => {
         return (
-            <span key={h.id + 66}>#{h.name} {' '}</span>
+            <span key={h.id + 7766}>#{h.name} {' '}</span>
         )
     })
     return (
@@ -105,10 +104,18 @@ const Project = ( {projectData} ) => {
                 <div className={classes.title}>{projectData.title}</div>
                 <div className={classes.description}>{projectData.description}</div>
                 <div className={classes.containerButton}>
-                    <a href={projectData.websiteLink} style={{marginRight: '0.8em'}}>
+                    <a
+                    href={projectData.websiteLink}
+                     style={{marginRight: '0.8em'}}
+                     target="_blank"
+                     rel="noreferrer"
+                     >
                         <div className={classes.button}>Demo</div>
                     </a>
-                    <a href={projectData.repoLink}>
+                    <a href={projectData.repoLink}
+                     target="_blank"
+                     rel="noreferrer"
+                     >
                         <div className={classes.button}>Code</div>
                     </a>
                 </div>

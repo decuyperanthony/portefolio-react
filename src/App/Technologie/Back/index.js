@@ -83,7 +83,7 @@ const TechnologyCard = () => {
     const classes = useStyles();
     const technologyJSX = techonologies.map((t) => {
         return (
-            <div key={t.id + 10} className={classes.containerTechno}>
+            <div key={t.id + 1004} className={classes.containerTechno}>
                 <div>
                      {t.name}
                 </div>
