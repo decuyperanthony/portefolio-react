@@ -2,7 +2,7 @@ import React from 'react';
 
 // == components
 import Title from './Title';
-import Project from './Project';
+import Project from './Projects';
 
 // == pictures
 import tribz from '../../img/tribz.png'
