@@ -13,19 +13,20 @@ const hobbiesData = [
     {
         id: 144,
         title: 'Voyages',
-        description: 'Paris nec mergitur fneled',
+        description: '',
         picture: travel
     },
     {
         id: 142,
         title: 'Technologies',
-        description: 'Paris nec mergitur fneled',
+        description: '',
         picture: website
     },
     {
         id: 143,
         title: 'Histoire',
-        description: 'Paris nec mergitur fneled',
+        //! remplir description
+        description: '',
         picture: history
     },
 
@@ -58,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
     pictureHobbies: {
         maxWidth: '100%',
         borderRadius: '12px',
+        maxHeight: '10em'
     },
     title: {
         fontWeight: '600',
