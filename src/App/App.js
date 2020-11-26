@@ -26,6 +26,12 @@ const useStyles = makeStyles((theme) => ({
       padding: '2em',
     },
   },
+  profilAndHobbiesComponents: {
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      justifyContent: 'center'
+    },
+  },
   profilAndTechnologyComponents: {
     [theme.breakpoints.up('lg')]: {
       display: 'flex',
@@ -38,7 +44,7 @@ function App() {
   return (
     <div className={classes.app}>
         <div className={classes.profilAndTechnologyComponents}>
-          <div>
+          <div className={classes.profilAndHobbiesComponents}>
           <ProfilCard />
           <HobbiesDesktop />
           </div>

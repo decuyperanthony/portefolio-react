@@ -9,16 +9,15 @@ import { Card } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     containerProfilCard: {
-    //   display: 'flex',
-    [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('sm')]: {
             display: 'flex'
-    },
-    [theme.breakpoints.up('lg')]: {
-        marginLeft: '0.5em'
-    },
-    backgroundColor: '#FFFFFF',
-    padding: '0.8em',
-    marginBottom: '0.5em'
+        },
+        [theme.breakpoints.up('lg')]: {
+            marginLeft: '0.5em'
+        },
+        backgroundColor: '#FFFFFF',
+        padding: '0.8em',
+        marginBottom: '0.5em'
     },
     pictureWebsiteContainer: {
         display: 'flex',
@@ -28,18 +27,22 @@ const useStyles = makeStyles((theme) => ({
             width: '40%',
             justifyContent: 'flex-start',
         },
-
-
     },
     pictureWebsite: {
         // height: '12.8em',
         // height: '100%',
         // width: '89vw',
-        maxHeight: '11em',
+        // maxHeight: '11em',
+        // width: '100%',
+        height: '100%',
         borderRadius: '12px',
         maxWidth: '100%',
         [theme.breakpoints.up('sm')]: {
             width: '14.5em',
+            // height: 'auto'
+        },
+        [theme.breakpoints.down('xs')]: {
+            maxHeight: '11em'
             // height: 'auto'
         },
     },

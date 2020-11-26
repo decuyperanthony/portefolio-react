@@ -8,23 +8,19 @@ import hobbiesData from '../../data/hobbiesData';
 
 const useStyles = makeStyles((theme) => ({
     containerCard: {
-    //   display: 'flex',
-    //   [theme.breakpoints.down('xs')]: {
-    //     width: '250px',
-    //   },
-    backgroundColor: '#FFFFFF',
-    padding: '0.8em',
-    marginBottom: '0.5em',
-    maxWidth: '413px',
-    [theme.breakpoints.up('lg')]: {
-        display: 'none',
-    },
+        margin: 'auto',
+        backgroundColor: '#FFFFFF',
+        padding: '0.8em',
+        marginBottom: '0.5em',
+        maxWidth: '413px',
+        [theme.breakpoints.up('lg')]: {
+            display: 'none',
+        },
     },
     mainTitle: {
         fontWeight: '500',
         fontSize: '18px',
         color: '',
-        // marginBottom: '0.5em'
     },
     pictureHobbiesContainer: {
         display: 'flex',
