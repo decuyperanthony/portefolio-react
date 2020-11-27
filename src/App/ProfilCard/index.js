@@ -3,6 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import anthony from '../../img/anthony.jpg'
+import cv from '../../img/AnthonydeCuyperCV.pdf'
 
 import { Card } from '@material-ui/core';
 
@@ -10,6 +11,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import ReceiptIcon from '@material-ui/icons/Receipt';
+import DescriptionIcon from '@material-ui/icons/Description';
 import opquast from '../../img/opquast.png'
 const useStyles = makeStyles((theme) => ({
     containerCard: {
@@ -43,9 +46,10 @@ const useStyles = makeStyles((theme) => ({
     },
     opquast: {
         height: '5em',
+        transition: '0.3s',
         '&:hover': {
-            height: '6em',
-            transition: 'width 2s'
+            height: '7em',
+            // transition: '0.2s'
         }
     },
     profilDescription: {
@@ -67,10 +71,13 @@ const useStyles = makeStyles((theme) => ({
         },
         '& a':{
             textDecoration: 'none',
-            color: '#2F80ED',
+            color: '#3F51B5',
             fontSize: '14px',
+            transition: '0.3s',
+            opacity: '0.6',
             '&:hover': {
-                textDecoration: 'underline'
+                textDecoration: 'underline',
+                opacity: '1',
             }
         },
         '& p':{
@@ -96,6 +103,10 @@ const ProfilCard = () => {
                     <div className={classes.name}>
                         <h1>Anthony de Cuyper</h1>
                         <h2>Developpeur Node-React</h2>
+                        <div className={classes.information}>
+                            <ReceiptIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
+                            <a href="https://www.francecompetences.fr/recherche/rncp/31114/">Titre Professionel developpeur web et web mobile</a>
+                        </div>
                     </div>
                     <div>
                         <a href="https://directory.opquast.com/fr/certificat/GC6XEH/">
@@ -104,24 +115,29 @@ const ProfilCard = () => {
                     </div>
                 </div>
                 <div className={classes.information}>
-                    <LinkedInIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
+                    <LinkedInIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
                     <a href="https://www.linkedin.com/in/anthony-de-cuyper/">anthony-de-cuyper</a>
                 </div>
                 <div className={classes.information}>
-                    <GitHubIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
-                    <a href="https://github.com/decuyperanthony?tab=repositories">@decuyperanthony</a>
+                    <GitHubIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
+                    <a href="https://github.com/decuyperanthony?tab=repositories">decuyperanthony</a>
                 </div>
                 <div className={classes.information}>
-                    <PhoneIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
+                    <PhoneIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
                     <a href="mailto:decuyperanthony@gmail.com">decuyperanthony@gmail.com</a>
                 </div>
                 <div className={classes.information}>
-                    <MailIcon fontSize="small" style={{marginRight: '0.2em', color: '#4F4F4F'}}/>
+                    <MailIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
                      <a href="tel:+33607597862">06 07 59 78 62</a>
+                </div>
+                <div className={classes.information}>
+                    <DescriptionIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}} />
+                    <a href={cv} target = "_blank" rel="noreferrer">CV</a>
                 </div>
                 <p>
                 Actuellement développeur chez Tanke. Développement en cours d une application en React avec deux API différentes en Node. Mongo && Postgres
                 </p>
+
             </div>
         </Card>
     );
