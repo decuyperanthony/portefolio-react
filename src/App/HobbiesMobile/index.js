@@ -16,11 +16,37 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('lg')]: {
             display: 'none',
         },
+        [theme.breakpoints.down('md')]: {
+            maxWidth: '100%'
+        },
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: '413px',
+        },
     },
     mainTitle: {
         fontWeight: '500',
         fontSize: '18px',
         color: '',
+    },
+    containerHobbies: {
+        [theme.breakpoints.down('md')]: {
+            display: 'flex',
+            maxWidth: '100%',
+            justifyContent: 'space-around'
+        },
+        [theme.breakpoints.down('sm')]: {
+            display: 'block',
+            maxWidth: '413px',
+        },
+    },
+    containerHobby: {
+        [theme.breakpoints.down('md')]: {
+            // display: 'flex',
+            width: '33%'
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: '100%'
+        },
     },
     pictureHobbiesContainer: {
         display: 'flex',
@@ -49,7 +75,7 @@ const TechnologyCard = () => {
     const classes = useStyles();
     const hobbiesJSX = hobbiesData.map((h) => {
         return (
-            <div>
+            <div className={classes.containerHobby}>
                 <div className={classes.pictureHobbiesContainer}>
                     <img
                     src={h.picture}
@@ -65,7 +91,9 @@ const TechnologyCard = () => {
     return (
         <Card className={classes.containerCard}>
            <div className={classes.mainTitle}>Hobbies</div>
-           {hobbiesJSX}
+           <div className={classes.containerHobbies}>
+            {hobbiesJSX}
+           </div>
         </Card>
     );
 };

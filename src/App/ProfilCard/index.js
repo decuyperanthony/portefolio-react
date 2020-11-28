@@ -17,13 +17,19 @@ import opquast from '../../img/opquast.png'
 const useStyles = makeStyles((theme) => ({
     containerCard: {
     //   display: 'flex',
-    //   [theme.breakpoints.down('xs')]: {
-    //     width: '250px',
-    //   },
+
     backgroundColor: '#FFFFFF',
     padding: '0.8em',
     marginBottom: '0.5em',
     maxWidth: '413px',
+    [theme.breakpoints.down('md')]: {
+        display: 'flex',
+        maxWidth: '100%'
+    },
+    [theme.breakpoints.down('sm')]: {
+        display: 'block',
+        maxWidth: '413px',
+    },
     },
     pictureProfilContainer: {
         display: 'flex',
@@ -33,8 +39,14 @@ const useStyles = makeStyles((theme) => ({
         width: '89.5vw',
         height: 'auto',
         borderRadius: '12px',
-        [theme.breakpoints.up('sm')]: {
-            // width: '250px',
+        [theme.breakpoints.down('md')]: {
+            height:'100%',
+            width: 'auto'
+            // width: 'flex'
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: '89.5vw',
+            height: 'auto',
         },
     },
     containerNameOpquast: {
@@ -53,6 +65,16 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     profilDescription: {
+        [theme.breakpoints.down('md')]: {
+            marginLeft: '1em',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between'
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: 0,
+            display: 'block'
+        },
         color: '#4F4F4F',
         '& h1': {
             fontWeight: '600',
@@ -102,37 +124,44 @@ const ProfilCard = () => {
                 <div className={classes.containerNameOpquast}>
                     <div className={classes.name}>
                         <h1>Anthony de Cuyper</h1>
-                        <h2>Developpeur Node-React</h2>
+                        <h2>Developpeur Web Node-React</h2>
                         <div className={classes.information}>
                             <ReceiptIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
-                            <a href="https://www.francecompetences.fr/recherche/rncp/31114/">Titre Professionel developpeur web et web mobile</a>
+                            <a href="https://www.francecompetences.fr/recherche/rncp/31114/"
+                                target = "_blank"
+                                rel="noreferrer"
+                                >
+                                Titre Professionel developpeur web et web mobile
+                            </a>
                         </div>
                     </div>
                     <div>
-                        <a href="https://directory.opquast.com/fr/certificat/GC6XEH/">
+                        <a href="https://directory.opquast.com/fr/certificat/GC6XEH/" target="_blank" rel="noreferrer">
                             <img src={opquast} alt="upquast" className={classes.opquast}/>
                         </a>
                     </div>
                 </div>
-                <div className={classes.information}>
-                    <LinkedInIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
-                    <a href="https://www.linkedin.com/in/anthony-de-cuyper/">anthony-de-cuyper</a>
-                </div>
-                <div className={classes.information}>
-                    <GitHubIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
-                    <a href="https://github.com/decuyperanthony?tab=repositories">decuyperanthony</a>
-                </div>
-                <div className={classes.information}>
-                    <PhoneIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
-                    <a href="mailto:decuyperanthony@gmail.com">decuyperanthony@gmail.com</a>
-                </div>
-                <div className={classes.information}>
-                    <MailIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
-                     <a href="tel:+33607597862">06 07 59 78 62</a>
-                </div>
-                <div className={classes.information}>
-                    <DescriptionIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}} />
-                    <a href={cv} target = "_blank" rel="noreferrer">CV</a>
+                <div>
+                    <div className={classes.information}>
+                        <LinkedInIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
+                        <a href="https://www.linkedin.com/in/anthony-de-cuyper/" target="_blank" rel="noreferrer">anthony-de-cuyper</a>
+                    </div>
+                    <div className={classes.information}>
+                        <GitHubIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
+                        <a href="https://github.com/decuyperanthony?tab=repositories" target="_blank" rel="noreferrer">decuyperanthony</a>
+                    </div>
+                    <div className={classes.information}>
+                        <MailIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
+                        <a href="mailto:decuyperanthony@gmail.com">decuyperanthony@gmail.com</a>
+                    </div>
+                    <div className={classes.information}>
+                        <PhoneIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}}/>
+                        <a href="tel:+33607597862">06 07 59 78 62</a>
+                    </div>
+                    <div className={classes.information}>
+                        <DescriptionIcon fontSize="small" style={{marginRight: '0.5em', color: '#4F4F4F'}} />
+                        <a href={cv} target="_blank" rel="noreferrer">CV</a>
+                    </div>
                 </div>
                 <p>
                 Actuellement développeur chez Tanke. Développement en cours d une application en React avec deux API différentes en Node. Mongo && Postgres

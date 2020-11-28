@@ -44,11 +44,13 @@ const Formation = () => {
         return (
             <div key={exp.id + 88} className={classes.containerExperience}>
                 <div>
-                    <img
-                    src={exp.logo}
-                    alt="logo formation"
-                    className={classes.picture}
-                     />
+                    <a href={exp.link} target="_blank" rel="noreferrer">
+                        <img
+                        src={exp.logo}
+                        alt="logo formation"
+                        className={classes.picture}
+                        />
+                     </a>
                 </div>
                 <div className={classes.containerDescription}>
                     <div style={{fontWeight: '500', fontSize: '11px', color: '#828282', marginBottom: '0.5em'}}>{exp.date}</div>

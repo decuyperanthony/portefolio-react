@@ -44,11 +44,13 @@ const ExperiencesCard = () => {
         return (
             <div key={exp.id + 33} className={classes.containerExperience}>
                 <div>
-                    <img
-                    src={exp.logo}
-                    alt="logo entreprise"
-                    className={classes.picture}
-                     />
+                    <a href={exp.linkTo}>
+                        <img
+                        src={exp.logo}
+                        alt="logo entreprise"
+                        className={classes.picture}
+                        />
+                     </a>
                 </div>
                 <div className={classes.containerDescription}>
                     <div style={{fontWeight: '500', fontSize: '11px', color: '#828282', marginBottom: '0.5em'}}>{exp.date}</div>

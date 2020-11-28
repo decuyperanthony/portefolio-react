@@ -8,7 +8,7 @@ import { Card } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
-    containerProfilCard: {
+    containerProject: {
         [theme.breakpoints.up('sm')]: {
             display: 'flex'
         },
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         },
         backgroundColor: '#FFFFFF',
         padding: '0.8em',
-        marginBottom: '0.5em'
+        marginBottom: '0.5em',
     },
     pictureWebsiteContainer: {
         display: 'flex',
@@ -93,7 +93,7 @@ const Project = ( {projectData} ) => {
         )
     })
     return (
-        <Card className={classes.containerProfilCard}>
+        <Card id={projectData.linkId} className={classes.containerProject}>
               <div className={classes.pictureWebsiteContainer}>
                 <img className={classes.pictureWebsite} alt={projectData.picture} src={projectData.picture} />
               </div>
