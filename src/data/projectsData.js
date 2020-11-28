@@ -6,6 +6,7 @@ import twitter1 from '../img/tweeter1.png'
 import button from '../img/button2.png'
 import ebook from '../img/ebookoverview.png'
 import pokemon from '../img/pokemon.png'
+import input from '../img/inputchallenge.png'
 
 const projectsData = [
     {
@@ -189,6 +190,32 @@ const projectsData = [
         repoLink: 'https://github.com/decuyperanthony/button-style-react',
         title: 'Button component with props',
         description: 'Création d\'un composant <Button /> qui peut recevoir des props permettant de changer la couleur, la taille, ajouter un icone, le rendre disabled etc ...'
+    },
+    {
+        id: 33,
+        hashtags: [
+            {
+                id: 17001,
+                name: 'react'
+            },
+            {
+                id: 18223,
+                name: 'sass'
+            },
+            {
+                id: 18224,
+                name: 'netlify'
+            },
+            {
+                id: 18225,
+                name: 'javascript'
+            },
+        ],
+        picture: input,
+        websiteLink: 'https://anthonydecuyper-challenge-input.netlify.app/',
+        repoLink: 'https://github.com/decuyperanthony/input-challenges-dev',
+        title: 'Input component with props',
+        description: 'Création d\'un composant <Input /> qui peut recevoir des props permettant de changer la couleur, la taille, ajouter un icone, le rendre disabled etc ...'
     },
     {
         id: 6,
