@@ -42,12 +42,13 @@ const Projects = () => {
     const projectsDataLength = projectsData.length;
     const countPagination = Math.ceil(projectsDataLength / 3);
     const mySplitProjectTable = [...projectsData];
+
     const handleChange = (event, value) => {
         setPage(value);
         setFirstItem(value * 3 - 3);
         setLastItem(value * 3);
     };
-    const ProjectCardJSX = mySplitProjectTable.slice(firstItem, lastItem )
+    const ProjectCardJSX = mySplitProjectTable.slice(firstItem, lastItem)
         .map((p) => {
                 return(
                     <Project key={p.id + 22} projectData={p}/>

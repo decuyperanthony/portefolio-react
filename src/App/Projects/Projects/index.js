@@ -29,11 +29,6 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     pictureWebsite: {
-        // height: '12.8em',
-        // height: '100%',
-        // width: '89vw',
-        // maxHeight: '11em',
-        // width: '100%',
         height: '100%',
         borderRadius: '12px',
         maxWidth: '100%',

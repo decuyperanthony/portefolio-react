@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ProfilCard from './ProfilCard';
 import Technology from './Technologie';
 import Experiences from './Experiences';
+import Formation from './Formation';
 import Projects from './Projects';
 import HobbiesMobile from './HobbiesMobile';
 import HobbiesDesktop from './HobbiesDesktop';
@@ -51,6 +52,7 @@ function App() {
           <div className={classes.experiencesAndTechnologyComponents}>
             <Technology />
             <Experiences />
+            <Formation />
             <Projects />
           </div>
         </div>
