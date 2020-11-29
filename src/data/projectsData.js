@@ -6,7 +6,7 @@ import twitter1 from '../img/tweeter1.png'
 import button from '../img/button2.png'
 import ebook from '../img/ebookoverview.png'
 import pokemon from '../img/pokemon.png'
-import input from '../img/inputchallenge.png'
+import input from '../img/inputchall.png'
 
 const projectsData = [
     {
