@@ -1,12 +1,14 @@
 // == pictures
-import tribz from '../img/tribz.png'
-import boutiqueDesAnges from '../img/boutiqueDesAnges.png'
-import solidarity from '../img/solidarity.png'
-import twitter1 from '../img/tweeter1.png'
-import button from '../img/button2.png'
-import ebook from '../img/ebookoverview.png'
-import pokemon from '../img/pokemon.png'
-import input from '../img/inputchall.png'
+import tribz from '../img/tribz.png';
+import boutiqueDesAnges from '../img/boutiqueDesAnges.png';
+import solidarity from '../img/solidarity.png';
+import twitter1 from '../img/tweeter1.png';
+import button from '../img/button2.png';
+import ebook from '../img/ebookoverview.png';
+import pokemon from '../img/pokemon.png';
+import input from '../img/inputchall.png';
+import starwars from '../img/starwars.png';
+
 
 const projectsData = [
     {
@@ -284,6 +286,52 @@ const projectsData = [
         repoLink: 'https://github.com/decuyperanthony/react-pokedex-decuyperanthony',
         title: 'Search on Poke API',
         description: 'Rechercher, trier et filtrer les pokemons'
+    },
+    {
+        id: 9,
+        hashtags: [
+            {
+                id: 123451,
+                name: 'react'
+            },
+            {
+                id: 123463,
+                name: 'redux'
+            },
+            {
+                id: 123489098,
+                name: 'node'
+            },
+            {
+                id: 123475,
+                name: 'axios'
+            },
+            {
+                id: 12348998,
+                name: 'express'
+            },
+            {
+                id: 1234890,
+                name: 'starwarsapi'
+            },
+            {
+                id: 1234998,
+                name: 'material-UI'
+            },
+            {
+                id: 1234998,
+                name: 'netlify'
+            },
+            {
+                id: 1234998,
+                name: 'heroku'
+            },
+        ],
+        picture: starwars,
+        websiteLink: 'https://anthonydecuyper-star-wars-fastory.netlify.app/',
+        repoLink: 'https://github.com/decuyperanthony/star-wars',
+        title: 'Authentification && Search on Star Wars API',
+        description: 'Rechercher, trier et filtrer les héros de Star Wars'
     },
 ]
 
