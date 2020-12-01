@@ -16,6 +16,10 @@ const projectsData = [
         linkId: 'tribz',
         hashtags: [
             {
+                id: 17001343,
+                name: 'progressive-web-app'
+            },
+            {
                 id: 121,
                 name: 'react'
 
@@ -165,11 +169,15 @@ const projectsData = [
         websiteLink: 'https://onlygood.netlify.app/',
         repoLink: 'https://github.com/decuyperanthony/onlygood-react',
         title: 'Tweeter',
-        description: 'Réseau social avec un système de follow/follower, de posts, de commentaires, likes et retweets'
+        description: 'Progressive web app en React-Node : Réseau social avec un système de follow/follower, de posts, de commentaires, likes et retweets'
     },
     {
         id: 5,
         hashtags: [
+            {
+                id: 17001343,
+                name: 'progressive-web-app'
+            },
             {
                 id: 17001,
                 name: 'react'
