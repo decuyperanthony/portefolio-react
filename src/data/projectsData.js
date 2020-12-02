@@ -137,6 +137,10 @@ const projectsData = [
         id: 4,
         hashtags: [
             {
+                id: 17001343,
+                name: 'progressive-web-app'
+            },
+            {
                 id: 3411,
                 name: 'react'
             },
@@ -174,10 +178,6 @@ const projectsData = [
     {
         id: 5,
         hashtags: [
-            {
-                id: 17001343,
-                name: 'progressive-web-app'
-            },
             {
                 id: 17001,
                 name: 'react'
