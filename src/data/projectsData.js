@@ -290,7 +290,7 @@ const projectsData = [
             },
         ],
         picture: pokemon,
-        websiteLink: 'https://anthonydecuypersearchonpokemonapi.netlify.app/',
+        websiteLink: 'https://anthonydecuyper-pokedex.netlify.app/',
         repoLink: 'https://github.com/decuyperanthony/react-pokedex-decuyperanthony',
         title: 'Search on Poke API',
         description: 'Rechercher, trier et filtrer les pokemons'
