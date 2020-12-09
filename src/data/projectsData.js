@@ -8,6 +8,7 @@ import ebook from '../img/ebookoverview.png';
 import pokemon from '../img/pokemon.png';
 import input from '../img/inputchall.png';
 import starwars from '../img/starwars.png';
+import catmash from '../img/catmash-screen.png';
 
 
 const projectsData = [
@@ -174,6 +175,40 @@ const projectsData = [
         repoLink: 'https://github.com/decuyperanthony/onlygood-react',
         title: 'Tweeter',
         description: 'Progressive web app en React-Node : Réseau social avec un système de follow/follower, de posts, de commentaires, likes et retweets'
+    },
+    {
+        id: 5654565,
+        hashtags: [
+            {
+                id: 1701201,
+                name: 'node'
+            },
+            {
+                id: 1822323,
+                name: 'react'
+            },
+            {
+                id: 1822324,
+                name: 'redux'
+            },
+            {
+                id: 1823225,
+                name: 'postgres'
+            },
+            {
+                id: 18232225,
+                name: 'sqitch'
+            },
+            {
+                id: 18233225,
+                name: 'datamapper'
+            },
+        ],
+        picture: catmash,
+        websiteLink: 'https://catmash-anthony-de-cuyper.netlify.app/',
+        repoLink: 'https://github.com/decuyperanthony/catmash-atelier--front',
+        title: 'Cat mash',
+        description: 'Match pour savoir quel est le chat le plus mignon'
     },
     {
         id: 5,
