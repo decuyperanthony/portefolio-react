@@ -171,7 +171,7 @@ const projectsData = [
             },
         ],
         picture: twitter1,
-        websiteLink: 'https://onlygood.netlify.app/',
+        websiteLink: 'https://www.onlygood.website/',
         repoLink: 'https://github.com/decuyperanthony/onlygood-react',
         title: 'Tweeter',
         description: 'Progressive web app en React-Node : Réseau social avec un système de follow/follower, de posts, de commentaires, likes et retweets'
