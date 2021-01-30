@@ -2,11 +2,20 @@
 import tanke from '../img/logo_tribz.png'
 import solidarity from '../img/S_logo_favicon_fonce.png'
 import bda from '../img/logo_bda.png'
+import incube from '../img/incube2.jpg'
 
 const experiencesData = [
     {
         id: 1,
-        date: 'Depuis Juillet 2020 - ',
+        date: 'Depuis janvier 2021 - ',
+        title: 'Developpeur front',
+        linkTo: '#incube',
+        logo: incube,
+        description: 'Developpement d\' applications React pointant sur différentes API chez Incube à Paris.'
+    },
+    {
+        id: 4,
+        date: 'Juin 2020 - janvier 2021',
         title: 'Developpeur front et back',
         linkTo: '#tribz',
         logo: tanke,
